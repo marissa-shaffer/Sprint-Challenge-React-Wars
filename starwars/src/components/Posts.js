@@ -14,6 +14,8 @@ const Posts = props => {
         font-size: 30px;
     }
     `
+    console.log(props);
+    
 return (
     <Container>
         <ul>

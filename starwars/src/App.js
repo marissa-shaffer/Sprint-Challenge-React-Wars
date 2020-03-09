@@ -4,6 +4,7 @@ import axios from 'axios';
 import Posts from "./components/Posts.js";
 import styled from "styled-components";
 
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -14,7 +15,7 @@ const App = () => {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    axios.get("http://swapi.co/api/people/")
+    axios.get("https://swapi.co/api/people/")
     .then(response => {
       setPeople(response.data.results);
     });
